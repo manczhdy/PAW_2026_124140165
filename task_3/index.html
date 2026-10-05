@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulir Peminjaman GSC">
+    <meta name="author" content="alhamdy aka mancz">
+    <meta name="keywords" content="Asisten, Mata kuliah, Asisten Mata Kuliah">
+    <title>Pendaftaran Asisten Mata Kuliah</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/Logo Itera.png" alt="Logo ITERA">
+            <ul>
+                <li> <a href="index.html">Pendaftaran</a></li>
+                <li> <a href="Data_Pendaftar.html"> Data Pendaftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="Formulir">
+        <section class="box">
+            <h1>Pendaftaran Asisten Mata Kuliah</h1>
+            <p>Isi data diri Anda di bawah ini secara lengkap.</p>
+
+            <form action="Data_Pendaftar.html" method="get">
+                <fieldset>
+                    <legend>Formulir Data Pendaftar</legend>
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM:</label>
+                        <input type="text" id="nim" name="nim" placeholder="Contoh: 124140001" pattern="[0-9]{9}" title="Masukkan 9 digit NIM" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matkul1">Mata Kuliah Pilihan 1:</label>
+                        <select id="matkul1" name="matkul1" required>
+                            <option value=""> Pilih Mata Kuliah Pertama </option>
+                            <option value="Pengembangan Aplikasi Web">Pengembangan Aplikasi Web</option>
+                            <option value="Basis Data">Basis Data</option>
+                            <option value="Jaringan Komputer">Jaringan Komputer</option>
+                            <option value="Metodologi Penelitian">Metodologi Penelitian</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matkul2">Mata Kuliah Pilihan 2:</label>
+                        <select id="matkul2" name="matkul2" required>
+                            <option value="">-- Pilih Mata Kuliah Kedua --</option>
+                            <option value="Pengembangan Aplikasi Web">Pengembangan Aplikasi Web</option>
+                            <option value="Basis Data">Basis Data</option>
+                            <option value="Jaringan Komputer">Jaringan Komputer</option>
+                            <option value="Metodologi Penelitian">Metodologi Penelitian</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah bersedia jika diubah hari?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="bersedia-ya" name="bersedia_ubah_hari" value="Bersedia" required>
+                            <label for="bersedia-ya">Bersedia</label>
+
+                            <input type="radio" id="bersedia-tidak" name="bersedia_ubah_hari" value="Tidak Bersedia">
+                            <label for="bersedia-tidak">Tidak Bersedia</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nilai">Nilai Mata Kuliah Tersebut:</label>
+                        <select id="nilai" name="nilai" required>
+                            <option value="A">A</option>
+                            <option value="AB">AB</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hari Yang akan dipilih:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="senin" name="hari" value="Senin">
+                            <label for="senin">Senin</label>
+                            
+                            <input type="checkbox" id="selasa" name="hari" value="Selasa">
+                            <label for="selasa">Selasa</label>
+
+                            <input type="checkbox" id="rabu" name="hari" value="Rabu">
+                            <label for="rabu">Rabu</label>
+
+                            <input type="checkbox" id="kamis" name="hari" value="Kamis">
+                            <label for="kamis">Kamis</label>
+
+                            <input type="checkbox" id="jumat" name="hari" value="Jumat">
+                            <label for="jumat">Jumat</label>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" id="btn-submit">Daftar</button>
+                        <button type="reset" id="btn-reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
