@@ -63,7 +63,12 @@ legend {
     border: 1px solid lightgrey;
 }
 
-.Formulir h1, .DataContainer h1 {
+.Formulir h1{
+    margin-top: 0;
+    color: midnightblue;
+}
+
+.DataContainer h1{
     margin-top: 0;
     color: midnightblue;
 }
@@ -80,7 +85,13 @@ legend {
     font-size: 14px;
 }
 
-.radio-group, .checkbox-group {
+.radio-group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.checkbox-group{
     display: flex;
     gap: 15px;
     align-items: center;
